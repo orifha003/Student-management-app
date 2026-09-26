@@ -53,7 +53,7 @@ void viewStudents() {
         return;
     }
 
-    cout << "\n--- Student List ---\n";
+    cout << "\n*** Student List ***\n";
 
     for (int i = 0; i < studentCount; i++) {
         cout << "\nStudent " << i + 1 << endl;
