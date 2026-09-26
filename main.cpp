@@ -96,6 +96,7 @@ int main() {
         cout << "1. Add Student\n";
         cout << "2. View Students\n";
         cout << "3. Search Student\n";
+        cout << "4. Update Student\n";
         cout << "4. Exit\n";
         cout << "********************************\n";
 
