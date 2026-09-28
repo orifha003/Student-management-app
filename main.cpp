@@ -23,7 +23,7 @@ void addStudent() {
         return;
     }
 
-    cout << "\n--- Add Student ---\n";
+    cout << "\n*** Add Student ***\n";
 
     cout << "Enter Student ID: ";
     cin >> students[studentCount].id;
@@ -49,7 +49,7 @@ void addStudent() {
 // Function to display students
 void viewStudents() {
     if (studentCount == 0) {
-        cout << "\nNo students found.\n";
+        cout << "\n No students found \n";
         return;
     }
 
@@ -73,7 +73,7 @@ void searchStudent() {
 
     for (int i = 0; i < studentCount; i++) {
         if (students[i].id == searchID) {
-            cout << "\n--- Student Found ---\n";
+            cout << "\n*** Student Found ***\n";
             cout << "ID: " << students[i].id << endl;
             cout << "Name: " << students[i].name << endl;
             cout << "Age: " << students[i].age << endl;
@@ -83,6 +83,19 @@ void searchStudent() {
     }
 
     cout << "\nStudent not found.\n";
+}
+
+void updateStudent(){
+    int updateID;
+
+    cout <<"\nEnter Student ID to update: ";
+    cin >> updateID;
+
+    for (int i = 0; i < studentCount; i++){
+        if (Student[i].id == updateID){
+            cout << "\n*** Update Student***\n";
+        }
+    }
 }
 
 // Main function
